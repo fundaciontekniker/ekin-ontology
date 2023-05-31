@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/todo/tododw-ekin#"
      xml:base="https://w3id.org/todo/tododw-ekin"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:var="http://a4blue/ontologies/var.owl#"
@@ -52,15 +53,47 @@
     
 
 
+    <!-- https://w3id.org/todo/tododw-ekin#Method -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododw-ekin#Method">
+        <rdfs:subClassOf rdf:resource="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/todo/tododw-ekin#Procedure -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododw-ekin#Procedure">
+        <rdfs:subClassOf rdf:resource="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododw-ekin#ProcedurePart -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododw-ekin#ProcedurePart"/>
     
 
 
+    <!-- https://w3id.org/todo/tododw-ekin#Step -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododw-ekin#Step">
+        <rdfs:subClassOf rdf:resource="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/todo/tododw-ekin#Target -->
 
     <owl:Class rdf:about="https://w3id.org/todo/tododw-ekin#Target"/>
+    
+
+
+    <!-- https://w3id.org/todo/tododw-ekin#Task -->
+
+    <owl:Class rdf:about="https://w3id.org/todo/tododw-ekin#Task">
+        <rdfs:subClassOf rdf:resource="http://www.mesa.org/xml/B2MML-V0600#ProcessSegment"/>
+    </owl:Class>
 </rdf:RDF>
 
 
